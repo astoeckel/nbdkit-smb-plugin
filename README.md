@@ -3,7 +3,7 @@
 
 This *nbdkit* plugin facilitates using a CIFS/SAMBA share as a network block device (NBD). The block level device is represented as a collection of 1MiB super-block files that are placed into folders corresponding to the block addresses.
 
-**Note:** *nbdkit-smb-plugin* assumes that there is no concurrent read/write access to the share.
+**Note:** *nbdkit-smb-plugin* assumes that there is no concurrent read/write access to the share. In other words, *nbdkit-smb-plugin* must have exclusive access to the SMB share.
 
 ## Usage
 
