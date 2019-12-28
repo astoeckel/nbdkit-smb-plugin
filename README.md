@@ -31,7 +31,7 @@ sudo nbd-client 127.0.0.1 /dev/nbd0 -b 4096
 
 # Create a partition
 sudo fdisk /dev/nbd0
-# Type g, n, w (confirm everything by pressin enter multiple times)
+# Type g, n, w (confirm everything by pressing enter multiple times)
 
 # Optional: setup encryption using cryptsetup/LUKS
 
